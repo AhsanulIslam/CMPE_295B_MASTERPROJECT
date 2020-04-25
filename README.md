@@ -1,1 +1,1 @@
-# CMPE_295B_MASTERPROJECT
+# 2D to 3D High Resolution image conversion using generative GANs
