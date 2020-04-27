@@ -36,12 +36,21 @@ Streamlit application is used for developing the front end application. Where us
 
 ### Project Architecture
 ![Project Architecture](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Project%20Architecture.png)
+
 ### Results
+![Uploaded Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Car%20Uploaded%20Images.png)
+
+![Super Resolution Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/SR.png)
+
+![Segementation Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Segmented%20Image.png)
+
+![3D](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/3D.png)
 
 ### Performance and Analyses
 ![Model Results](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/comparision_results.png)
 
 ![Model Comparision](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/model_comparision.png)
+
 ### References
 
 1. https://arxiv.org/pdf/1901.11153.pdf
