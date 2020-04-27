@@ -16,31 +16,34 @@ We used synthetic images of objects from Shapenet dataset and also real time ima
 ### Project Design
 Our project is designed with four main modules or sub divisions namely semantic segmentation module, three dimensional reconstruction module, super resolution module and web app.
 
-1. 3D Reconstruction Module
+![Project Pipeline](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/pipeline.png)
+
+##### 1. 3D Reconstruction Module
 
 The 3D Generator subsystem architecture is built for reconstruction of single and multi views. Module is designed to recreate the 3D form of an object, either from single or multiple RGB images. The 3D shape of an entity is represented by a 3D voxel map, where 0 is an empty cell, and 1 is an occupied cell. Framework has four main modules which are encoder, decoder, context-conscious fusion and refiner.
 
-2. Super Resolution Module
+##### 2. Super Resolution Module
 
 Single Super-resolution image (SISR), tries to capture a high-resolution (HR) image from a single low-resolution (LR) picture. The basic model is constructed with residual blocks and optimized using perceptual loss in a GAN framework. Nevertheless a major gap still exists between SRGAN findings and ground-truth (GT) images.
 
-3. Semantic Segmentation Module
+##### 3. Semantic Segmentation Module
 
 The software DeepLab V3 + is used for the method of semantine segmentation. The semantic segmentation distinguishes the target from the background in the image and transforms the 3-channel RGB image into a 4-channel RGBA image. The RGBA image is fed into the architecture for the 3D reconstruction.
 
-4. Web App
+##### 4. Web App
 
 Streamlit application is used for developing the front end application. Where user uploads the 2d rgb image, it passes through super resolution model and generates the semantic segmented image. This when processed finally outputs the 3D voxeled respresentation image.
 
 ### Project Architecture
-
+![Project Architecture](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Project%20Architecture.png)
 ### Results
 
 ### Performance and Analyses
+![Model Results](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/comparision_results.png)
 
+![Model Comparision](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/model_comparision.png)
 ### References
 
-
-
-
-
+1. https://arxiv.org/pdf/1901.11153.pdf
+2. https://people.csail.mit.edu/khosla/papers/cvpr2015_wu.pdf
+3. https://arxiv.org/pdf/1604.00449v1.pdf
