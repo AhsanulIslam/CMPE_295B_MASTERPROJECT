@@ -113,11 +113,6 @@ def SuperResImage():
 def SegmentImage():	
 	image = cv2.imread('results/0_rlt.png')
 	cv2.imwrite('results/superres.png', cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-	#image = cv2.imread('results/superres.png')
-	#st.image(image, caption ='orginal image', channels = 'RGB', use_column_width=True)
-	
-	#fixed = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-	#st.image(fixed, caption ='converted image',use_column_width=True)
 
 	os.remove('results/0_rlt.png')
 	test_seg_img_folder = 'results/*'
@@ -127,7 +122,6 @@ def SegmentImage():
 		base = osp.splitext(osp.basename(path))[0]
 	image = cv2.imread(path, cv2.IMREAD_COLOR)
 	image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB )
-        #cv2.imwrite('results/{:s}_rlt.png'.format(base),image)
 	segment = None
 	SEG_CFG = {}
 	config_segmentation(SEG_CFG)
