@@ -37,18 +37,30 @@ Streamlit application is used for developing the front end application. Where us
 ### Project Architecture
 ![Project Architecture](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Project%20Architecture.png)
 
+### Model Path
+
+1. Super Resolution Model: s3://2dto3d/superres/RRDB_ESRGAN_x4.pth
+2. 2D to 3D Model: s3://2dto3d/2d_to_3d_pretrainedmodel.pth
+
 ### Results
+User uploads the input 2D low resolution image.
 ![Uploaded Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Car%20Uploaded%20Images.png)
 
+Super resolution image is generated using ESRGAN
 ![Super Resolution Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/SR.png)
 
+Super resolution image is segmented 
 ![Segementation Image](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/Segmented%20Image.png)
 
+Model outputs 3D super resolution voxel image
 ![3D](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/3D.png)
 
 ### Performance and Analyses
+
+Below image depicts model performance for different domain
 ![Model Results](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/comparision_results.png)
 
+Comparision analyses of existing models with our model
 ![Model Comparision](https://github.com/Radhika009/CMPE_295B_MASTERPROJECT/blob/master/Images/model_comparision.png)
 
 ### References
